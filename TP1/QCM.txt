@@ -1,0 +1,35 @@
+Partie 1 — QCM (outils de développement)
+
+1) Quelle est la principale fonction de Node.js ?
+Réponse : a) Un environnement d'exécution pour le code JavaScript côté serveur.
+Justif : Node exécute JS hors du navigateur et permet d'utiliser npm.
+
+2) Commande pour installer Angular CLI globalement :
+Réponse : c) npm install -g @angular/cli.
+
+3) Éditeur recommandé pour Angular :
+Réponse : b) Visual Studio Code.
+Justif : extensions (Angular Language Service), intégration, debugging.
+
+4) Fichier qui contient les dépendances gérées par npm :
+Réponse : b) package.json.
+
+5) Commande pour créer un nouveau projet Angular nommé "ma-app" :
+Réponse : c) ng new ma-app.
+
+6) Rôle de ng serve :
+Réponse : b) Lancer un serveur de développement et recharger l'application lors des modifications.
+
+Partie 2 — QCM (création et structure)
+
+Réponses :
+
+1) Répertoire qui contient les sources : a) src/
+
+2) Fichier qui définit modules, composants, services : b) app.module.ts
+
+3) Rôle de angular.json : b) Définir les configurations de compilation, les entrées/sorties.
+
+4) Commande pour générer un composant header : c) ng generate component header
+
+5) Rôle de tsconfig.json : a) Configurer le compilateur TypeScript.

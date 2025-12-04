@@ -1,0 +1,32 @@
+Rapport comparatif : Angular, React et Vue.js
+
+Angular, React et Vue.js sont trois technologies très utilisées pour développer des interfaces web modernes. Elles permettent de créer des applications rapides, dynamiques et faciles à maintenir.
+
+1. Angular
+
+Angular est un framework complet développé par Google. Il utilise TypeScript et propose une structure stricte avec des modules, composants et services. Il est idéal pour les grandes applications d’entreprise.
+
+Avantages : très complet, bien structuré, CLI puissante.
+Inconvénients : difficile à apprendre, lourd pour de petits projets.
+
+2. React
+
+React est une bibliothèque JavaScript créée par Meta. Elle sert uniquement à construire les interfaces, mais elle est très flexible. On doit souvent ajouter d’autres outils (React Router, Redux).
+
+Avantages : flexible, très populaire, performant.
+Inconvénients : dépend beaucoup de bibliothèques externes, JSX peut déranger.
+
+3. Vue.js
+
+Vue.js est un framework progressif, simple et rapide à apprendre. Il combine les bonnes idées de React et Angular, avec une syntaxe claire.
+
+Avantages : facile, propre, rapide à prendre en main.
+Inconvénients : moins utilisé en entreprise que React et Angular.
+
+4. Conclusion
+
+Angular → meilleur pour les projets complexes et de grande taille.
+
+React → idéal pour les interfaces dynamiques nécessitant flexibilité.
+
+Vue → parfait pour apprendre vite et réaliser des projets rapides ou de taille moyenne.
