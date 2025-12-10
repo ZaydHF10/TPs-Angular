@@ -1,0 +1,73 @@
+Question 1 : Structure d’un projet Angular
+
+Réponse : b) main.ts
+
+Réponse : c) src/app/
+
+Réponse : b) Définir les configurations de construction et les options pour Angular CLI.
+
+Réponse : a) Il décrit les dépendances du projet et les scripts npm disponibles.
+
+Réponse : a) Configurer les options de compilation TypeScript pour le projet.
+
+Question 2 : Création et intégration de composants
+
+Réponse : c) ng generate component profil
+
+Réponse : d) profil.service.ts
+
+Réponse : b) @Component
+
+Réponse : a) La balise HTML correspondant au sélecteur du composant.
+
+Réponse : a) ng generate component composants/utilisateur
+
+Question 3 : Liaison de données bidirectionnelle avec ngModel
+
+Réponse : c) [(ngModel)]="nom"
+
+Réponse : b) FormsModule
+
+Réponse : b) La liaison unidirectionnelle met à jour la vue lorsque le modèle change, tandis que la bidirectionnelle synchronise modèle et vue dans les deux sens.
+
+Réponse : c) @angular/forms
+
+Réponse : b) Pour synchroniser automatiquement les données entre le modèle et la vue.
+
+Question 4 : AppModule
+
+Réponse : c) Il déclare les composants, directives, pipes et importe les modules nécessaires.
+
+Réponse : a) @NgModule
+
+Réponse : b) imports
+
+Réponse : c) Les fonctionnalités liées au module manquant ne fonctionneront pas et des erreurs peuvent survenir.
+
+Réponse : b) app.module.ts
+
+Question 5 : Déclaration des composants dans l’AppModule
+
+Réponse : a) Pour que les composants puissent être utilisés dans les templates d'autres composants du même module.
+
+Réponse : b) declarations
+
+Réponse : b) Angular génère une erreur indiquant que le composant n'est pas une entité connue.
+
+Réponse : b) Non, un composant ne peut être déclaré que dans un seul module.
+
+Réponse : b) Créer des modules de fonctionnalités et déclarer les composants dedans.
+
+Questions ouvertes
+
+Le fichier app.component.ts définit le composant racine de l’application. Il contient la classe du composant, son template, son style et son sélecteur. Il est déclaré dans app.module.ts dans le tableau declarations, puis Angular démarre ce composant via main.ts qui lance la fonction bootstrapModule(AppModule).
+
+Pour créer un composant, on exécute la commande ng generate component nom. Angular crée quatre fichiers : .ts, .html, .css, .spec.ts. Le composant doit ensuite être déclaré dans un module, puis utilisé via son sélecteur dans un template. Cette intégration permet à Angular de reconnaître et compiler le composant.
+
+FormsModule fournit les directives de formulaires template-driven, dont ngModel. Il contient les outils nécessaires pour gérer la saisie utilisateur, la validation et la synchronisation entre les données du composant et la vue. Sans ce module, ngModel n’est pas reconnu.
+
+La liaison de données bidirectionnelle permet de synchroniser automatiquement la valeur du modèle et celle du champ de formulaire. Exemple :
+<input [(ngModel)]="nom">
+Lorsque l’utilisateur modifie la valeur, la variable nom change, et si la variable change dans le composant, la vue se met à jour.
+
+Si un composant n’est pas déclaré dans un module, Angular ne le reconnaît pas et génère une erreur indiquant que l’élément n’est pas connu. Le composant n’est pas compilé, il n’apparaît pas dans la vue et bloque le fonctionnement de l’application.

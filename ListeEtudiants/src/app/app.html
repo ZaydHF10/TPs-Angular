@@ -1,0 +1,29 @@
+<div class="container">
+  <header class="app-header">
+    <div>
+      <h1 class="app-title">{{ title }}</h1>
+      <div class="app-sub">Gestion des étudiants — ListeEtudiants</div>
+    </div>
+    <div class="center">
+      <a class="btn btn-ghost" href="#">Documentation</a>
+    </div>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <app-adresse></app-adresse>
+      <app-utilisateur></app-utilisateur>
+      <app-etudiant> </app-etudiant>
+    </div>
+
+    <aside class="card">
+      <app-profil></app-profil>
+    </aside>
+  </section>
+
+  <div style="margin-top:18px">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+      
+  

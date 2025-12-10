@@ -1,0 +1,5 @@
+.card h3 { margin: 0 0 8px 0; }
+.user-box { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 56px; height: 56px; border-radius: 8px; background: linear-gradient(180deg, #2563eb, #7c3aed); display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; }
+.user-info p { margin: 0; }
+.muted { color: var(--muted); font-size: .95rem; }

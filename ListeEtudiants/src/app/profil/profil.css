@@ -1,0 +1,4 @@
+.profile-form label { display: block; margin: 8px 0; color: #111827; }
+.profile-form input { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #e6edf3; }
+.profile-summary { margin-top: 12px; color: var(--muted); }
+.profile-header { display: flex; justify-content: space-between; align-items: center; }

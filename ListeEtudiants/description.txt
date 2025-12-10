@@ -1,0 +1,9 @@
+Fichier / Dossier ||	Rôle
+src/app	          ||   Contient tous les composants, services et fichiers logiques du projet
+src/assets	      ||   Contient les images, fichiers statiques (CSS, JSON, etc.)
+src/environments  ||   Contient les fichiers de configuration pour les environnements (dev/prod)
+src/main.ts	      ||   Point d’entrée principal : c’est le fichier qui démarre ton application Angular
+src/index.html    ||   Page HTML principale qui héberge ton application (contient <app-root>)
+angular.json	  ||   Fichier de configuration du projet Angular CLI (build, serve, test, etc.)
+package.json      ||	Liste les dépendances (librairies) et les scripts npm
+tsconfig.json     ||	Configure le compilateur TypeScript (règles, compatibilité, etc.)
