@@ -1,0 +1,11 @@
+<div class="question-card">
+  <div class="question-text">{{ question.question }}</div>
+  <div class="options">
+    <button *ngFor="let opt of question.options"
+            (click)="onSelect(opt)"
+            [disabled]="disabled"
+            [class.selected]="selected === opt">
+      {{ opt }}
+    </button>
+  </div>
+</div>

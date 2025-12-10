@@ -1,0 +1,11 @@
+<div class="product-card" [class.disponible]="enStock">
+  <img [src]="imageUrl" alt="Produit" />
+  <h3>{{ nomProduit }}</h3>
+  <p class="product-price">{{ prix | currency:'EUR':'symbol':'1.2-2' }}</p>
+  <button (click)="envoyerAuParent()">Ajouter au panier</button>
+  <p class="stock-status" [style.color]="enStock ? '#22c55e' : '#ef4444'">
+    {{ enStock ? 'Produit disponible' : 'Hors stock' }}
+  </p>
+  <button class="stock-toggle" (click)="toggleStock()">Changer état du stock</button>
+</div>
+

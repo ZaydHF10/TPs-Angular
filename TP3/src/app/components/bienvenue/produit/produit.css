@@ -1,0 +1,93 @@
+/* produit.css — consolidated, valid styles */
+
+/* Stock badge */
+.disponible {
+  display: inline-block;
+  border: 2px solid #16a34a;
+  background: #dcfce7;
+  color: #065f46;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* Product card container */
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.06);
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  border: 1px solid #eef2ff;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(15,23,42,0.10);
+  background: #f8fbff;
+}
+
+/* Image */
+.product-card img {
+  width: 78px;
+  height: 78px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eef2ff;
+  border: 1px solid #e6eefc;
+  margin-bottom: 8px;
+}
+
+/* Title */
+.product-card h3,
+h3 {
+  font-size: 1rem;
+  margin: 0 0 6px 0;
+  color: #0f172a;
+  text-align: center;
+}
+
+/* Price */
+.product-price {
+  font-weight: 700;
+  color: #b45309;
+  margin-bottom: 6px;
+}
+
+/* Stock text */
+.stock-status {
+  font-size: 0.88rem;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.stock-toggle,
+.product-card button {
+  padding: 6px 10px;
+  border-radius: 7px;
+  border: none;
+  background: #0f172a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.12s ease;
+}
+.stock-toggle:hover,
+.product-card button:hover {
+  background: #f59e0b;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+/* Inline layout helpers (used by panier) */
+.cart-products-inline {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

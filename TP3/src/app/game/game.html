@@ -1,0 +1,22 @@
+<div class="game-root">
+  <div class="game-header">
+    <h2>Quiz Game</h2>
+    <app-score [score]="score()" [correct]="correct()" [wrong]="wrong()"></app-score>
+  </div>
+
+  <div class="game-body">
+    <ng-container *ngIf="questions.length > 0">
+      <app-question
+        [question]="questions[currentIndex()]"
+        [disabled]="answered()"
+        [selected]="selected()"
+        (choose)="selectOption($event)">
+      </app-question>
+
+      <div class="controls">
+        <button (click)="next()" [disabled]="!answered() || currentIndex() >= questions.length - 1">Suivant</button>
+        <button (click)="restart()">Redémarrer</button>
+      </div>
+    </ng-container>
+  </div>
+</div>

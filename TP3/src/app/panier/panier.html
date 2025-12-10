@@ -1,0 +1,32 @@
+
+
+<div class="panier-card">
+  <h2>Mon Panier</h2>
+  <div class="cart-info">
+    <span class="compteur">Produits ajoutés : {{ compteur }}</span>
+  </div>
+  <div class="cart-products-inline">
+    <app-produit 
+      [nomProduit]="'Argentina-Kit'" 
+      [prix]=159.99
+      [enStock]="true"
+      [imageUrl]="'assets/Produit.jpg'"
+      (ajouterAuPanier)="ajouter()">
+    </app-produit>
+    <app-produit 
+      [nomProduit]="'Brazil-Kit'" 
+      [prix]=159.99
+      [enStock]="false"
+      [imageUrl]="'assets/Brazil_Kit.jpg'"
+      (ajouterAuPanier)="ajouter()">
+    </app-produit>
+    <app-produit 
+      [nomProduit]="'Japan-Kit'" 
+      [prix]=109.99
+      [enStock]="true"
+      [imageUrl]="'assets/Japan_Kit.jpg'"
+      (ajouterAuPanier)="ajouter()">
+    </app-produit>
+  </div>
+</div>
+

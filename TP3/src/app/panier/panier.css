@@ -1,0 +1,34 @@
+/* === Conteneur principal du panier === */
+.panier-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(30,41,59,0.10);
+  padding: 18px 16px;
+  margin-bottom: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Titre */
+h2 {
+  color: #2563eb;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+/* Compteur */
+.compteur {
+  color: #fbbf24;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* === Alignement des produits en ligne === */
+.cart-products-inline {
+  display: flex;
+  flex-wrap: wrap;      /* Retour à la ligne automatique */
+  gap: 14px;            /* Espace entre les produits */
+  justify-content: flex-start;
+  align-items: flex-start;
+}

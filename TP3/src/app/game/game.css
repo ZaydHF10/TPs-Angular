@@ -1,0 +1,10 @@
+.game-root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.game-header { display:flex; justify-content:space-between; align-items:center }
+.game-body { background: #fff; padding: 12px; border-radius: 10px; border: 1px solid #eef2ff }
+.controls { margin-top: 10px; display:flex; gap:8px }
+.controls button { padding:6px 12px; border-radius:6px; border:none; cursor:pointer }
+.controls button[disabled] { opacity:0.5; cursor:not-allowed }

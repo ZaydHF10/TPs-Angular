@@ -1,0 +1,105 @@
+
+:root {
+	--shop-bg: #f5f7fa;
+	--shop-header: #1e293b;
+	--shop-accent: #f59e42;
+	--shop-accent2: #38bdf8;
+	--shop-card: #fff;
+	--shop-text: #222;
+	--shop-muted: #64748b;
+	--shop-radius: 14px;
+}
+
+body {
+	margin: 0;
+	background: var(--shop-bg);
+	font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+	color: var(--shop-text);
+}
+
+.shop-header {
+	background: linear-gradient(90deg, var(--shop-header), var(--shop-accent2));
+	color: #fff;
+	padding: 24px 0 18px 0;
+	text-align: center;
+	font-size: 2.2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	box-shadow: 0 4px 18px rgba(30,41,59,0.08);
+}
+
+.shop-container {
+	max-width: 1100px;
+	margin: 32px auto;
+	padding: 0 18px;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 28px;
+}
+
+.product-card {
+	background: var(--shop-card);
+	border-radius: var(--shop-radius);
+	box-shadow: 0 6px 24px rgba(30,41,59,0.10);
+	padding: 18px 16px 16px 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: box-shadow 0.2s;
+}
+.product-card:hover {
+	box-shadow: 0 12px 32px rgba(30,41,59,0.18);
+}
+.product-img {
+	width: 120px;
+	height: 120px;
+	object-fit: contain;
+	margin-bottom: 12px;
+	border-radius: 10px;
+	background: #f1f5f9;
+}
+.product-title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 0 0 6px 0;
+	color: var(--shop-header);
+}
+.product-desc {
+	color: var(--shop-muted);
+	font-size: 0.98rem;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.product-price {
+	font-size: 1.1rem;
+	color: var(--shop-accent);
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+.product-actions {
+	display: flex;
+	gap: 10px;
+}
+.btn {
+	padding: 8px 18px;
+	border-radius: 8px;
+	border: none;
+	background: linear-gradient(90deg, var(--shop-accent), var(--shop-accent2));
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+	transition: background 0.2s;
+}
+.btn:hover {
+	background: linear-gradient(90deg, var(--shop-accent2), var(--shop-accent));
+}
+.shop-footer {
+	text-align: center;
+	color: var(--shop-muted);
+	margin: 40px 0 18px 0;
+	font-size: 1rem;
+}

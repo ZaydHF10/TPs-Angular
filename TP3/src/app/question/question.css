@@ -1,0 +1,6 @@
+.question-card { display:flex; flex-direction:column; gap:8px }
+.question-text { font-weight:700; color:#0f172a }
+.options { display:flex; gap:8px; flex-wrap:wrap }
+.options button { padding:6px 10px; border-radius:6px; border:1px solid #e6eefc; background:#fff; cursor:pointer }
+.options button.selected { background:#fbbf24; color:#0f172a }
+.options button[disabled] { opacity:0.6; cursor:not-allowed }
